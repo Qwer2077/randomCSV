@@ -77,10 +77,9 @@ def selectDefault():
         json.dump(json_file, f, indent=4)
 
 
+bt3 = tk.Button(root, text="Select default directory", command=selectDefault).pack()
 bt1 = tk.Button(root, text="Open File", command=openfile).pack()
-
 bt2 = tk.Button(root, text="Confirm", command=lambda: confirm(filename)).pack()
 
-bt3 = tk.Button(root, text="Select default directory", command=selectDefault).pack()
 
 root.mainloop()
